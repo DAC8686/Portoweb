@@ -77,9 +77,11 @@ header ul li:active {
 .uppage {
     margin-top: 10px;
     display:flex;
+    position: relative;
 }
 .uppage img {
-    width: 300px;
+    max-width: 300px;
+    min-width: 150px;
     height: 100%;
     margin-left: 50px;
     border: 1px solid black;
@@ -91,11 +93,14 @@ header ul li:active {
     border: 1px solid black;
     border-radius: 5px;
     background-color: rgb(177, 175, 175);
-    margin-left: auto;
+    margin: 20px auto;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 20px;
-    margin-right: 50px;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    word-wrap: break-word   ;
 }
 .item h2 {
     text-align: center;
